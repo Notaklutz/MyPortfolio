@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Kevin Nguyen's Portfolio</title>
+		<link rel="shortcut icon" href="images/favicon .ico" type="image/x-icon">
+		<link rel="icon" href="images/favicon .ico" type="image/x-icon">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header-wrapper">
+				<div class="container">
+					<div id="header">
+						<div id="logo">
+							<h1><a href="#">Kevin Nguyen's Portfolio</a></h1>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<nav id="nav">
+						<ul>
+							<li class="current_page_item"><a href="Home.html">Home</a></li>
+                            <li><a href="Tutorials.html">Tutorials</a></li>
+                            <li><a href="Projects.html">Projects</a></li>
+							<li><a href="FutureProjects.html">Future Projects</a></li>
+                            <li><a href="OtherSkills.html">Other Skills</a></li>
+							<li><a href="Bibliography.html">Bibliography</a></li>
+                            <li><a href="AboutMe.html">About Me</a></li>
+                            <li><a href="ContactMe.html">Contact Me</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="container">
+					<div id="banner">
+						<div class="container"><a href="#"><img src="images/Nature.jpg" alt=""></a></div>
+					</div>
+				</div>
+			</div>
+			<div id="page">
+				<div class="container">
+					<div class="row skel-cell-important" id="content">
+						<div class="12u">
+							<section>
+								<div class="post">
+									<h2>Arrays and ArrayList</h2>
+									<p>&nbsp;</p>
+									<p class="subtitle">Arrays </p>
+									<table><tr><td><p>
+									Arrays hold blocks of memory, which hold values of the same data type. A value in the array is called an element and the position that it is at 
+									is called an index. The whole array is referred to by one name and individual elements in the array can be accessed using the array's indices. The index 
+									starts at 0 and ends at -1 the array's length. If an attempt to access an element at an invalid index is made, an ArrayIndexOutOfBoundsException is thrown. Furthermore, an array is declared with a fixed length that cannot be changed. Arrays are advantageous because 
+									they are one object that holds many values and each element can be directly accessed using its index. An important thing to note 
+									about arrays is that when an array is passed into a method, it is considered a pass by reference. This means that any changes made to the array in the method 
+									will occur to the original array. The elements of the array are not copied like with other data types.</p></td>
+									<td><center><img src = images/Arrays.png><br><pBold>An array can store multiple values of the same data type. (Photo: The Programmer Toolbox)</pBold>
+									</td></tr></table>
+									<p>&nbsp;</p>
+									<p class="subtitle">Two-Dimensional Arrays </p>
+									<table><tr><td><p>
+									Two-dimensional (2-D) arrays are arrays with columns and rows. They can be used to represent board games, tables, mazes, etc. Each row or column in 
+									a 2-D array is allowed to have a different number of elements (a ragged array). For example, the first row of the array could have 5 elements, but the second 
+									row of the array could have 3. </p></td>
+									<td><center><img src = images/2DArrays.png style="width:85%;height:auto;"><br><pBold>An 2-D array has rows and columns. (Photo: Geeks for Geeks</pBold>
+									</td></tr></table>
+									<p>&nbsp;</p>
+									<p class="subtitle">ArrayList </p>
+									<p>
+									An ArrayList (java.util.ArrayList<E>) is an implementation of a list using an array. It is very similar to an array and can hold objects of any data type except
+									primitive data types (int, boolean, etc.) unless they are in a wrapper class (Integer, Boolean, etc.). <E> is the type parameter for a generic object, but it can 
+									be changed to store objects of any class. Whenever the ArrayList runs out of space, its capacity automatically doubles (a bigger array is created and the values from the original array are copied). Elements 
+									in an ArrayList cannot be accessed directly. Instead, ArrayList.get(int index) and ArrayList.set(int index, E element) are used to get and set the elements in an ArrayList. Other methods such as add() can be used to add 
+									elements to the ArrayList.</p><br>
+									<center>
+									<a href= "Tutorials.html"><img src= buttons/Previous.jpg style="width:235.5px;height:110px;border:0px"></a>
+									<a href= "ArraysAndArrayListExamples.html"><img src= buttons/Examples.jpg style="width:235.5px;height:110px;border:0px"></a>
+									</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+				<div id="footer-wrapper">
+			<div class="container">
+				<div class="row" id="footer-content">
+				<p>This website uses the Skylined web template by TEMPLATED.
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

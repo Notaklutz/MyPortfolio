@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Kevin Nguyen's Portfolio</title>
+		<link rel="shortcut icon" href="images/favicon .ico" type="image/x-icon">
+		<link rel="icon" href="images/favicon .ico" type="image/x-icon">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header-wrapper">
+				<div class="container">
+					<div id="header">
+						<div id="logo">
+							<h1><a href="#">Kevin Nguyen's Portfolio</a></h1>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<nav id="nav">
+						<ul>
+							<li class="current_page_item"><a href="Home.html">Home</a></li>
+                            <li><a href="Tutorials.html">Tutorials</a></li>
+                            <li><a href="Projects.html">Projects</a></li>
+							<li><a href="FutureProjects.html">Future Projects</a></li>
+                            <li><a href="OtherSkills.html">Other Skills</a></li>
+							<li><a href="Bibliography.html">Bibliography</a></li>
+                            <li><a href="AboutMe.html">About Me</a></li>
+                            <li><a href="ContactMe.html">Contact Me</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="container">
+					<div id="banner">
+						<div class="container"><a href="#"><img src="images/Nature.jpg" alt=""></a></div>
+					</div>
+				</div>
+			</div>
+			<div id="page">
+				<div class="container">
+					<div class="row skel-cell-important" id="content">
+						<div class="12u">
+							<section>
+								<div class="post">
+									<h2>Searching and Sorting</h2>
+									<p>&nbsp;</p>
+									<p class="subtitle">Searching </p>
+									Searching in Java is the process of finding a specific object within an Array or ArrayList. There are two 
+									main searching algorithms that are used in Java.</p>
+									<p>&nbsp;</p>
+									<p class="subtitle">Sequential Search </p>
+									<p>
+									Sequential search is a searching algorithm that scans each index of an Array or ArrayList to find a specific element. Where n = array.length, the average number of comparisons is 
+									n/2. In the worst case, n comparisons are needed to find the element or to make certain that the element in not within the array. Therefore, the time complexity of this array is O(n).
+									</p><br>
+									<center><img src = images/SequentialSearch.png style="width:65%;height:auto;"><br><br><pBold>The sequential search algorithm scans each index to find the element. (Photo: My Assignment Help)</pBold>
+									<p>&nbsp;</p></center>
+									<p class="subtitle">Binary Search </p>
+									<p>
+									Binary search is another searching algorithm. In order to use binary search, the elements of the Array or ArrayList must be arranged in ascending or descending order. This search compares the 
+									target value with the middle element of the remaining search range. It is a faster "divide and conquer" algorithm that only needs 20 comparisons to search for an element in an array of 1,000,000 elements. 
+									The time complexity of binary search is O(log n).</p><br>
+									<center><img src = images/BinarySearch.png style="width:40%;height:auto;"><br><br><pBold>The binary search algorithm splits the array in half each time to find the element. (Photo: Java67)</pBold>
+									<br></center>															
+									<p class="subtitle">Sorting </p>
+									<p>
+									Oftentimes, the elements of an array need to be sorted in ascending or descending order. For example, you might need to sort people by height, name, weight, etc. In the following sections, 
+									you will see four of the most commonly used sorting algorithms.</p>
+									<p>&nbsp;</p>
+									<p class="subtitle">Selection Sort </p>
+									<table><tr><td><p>
+									Selection sort is a sorting algorithm that selects the greatest (or smallest) value in an Array or ArrayList and swaps it with the first last element in the array. It repeats 
+									this process until the array is completed sorted in ascending or descending order. It is a consistent algorithm that always makes n(n-1)/2 comparisons and has a time complexity 
+									of O(n^2).</p></td>
+									<td><center><img src = images/SelectionSort.jpg style="width:100%;height:auto;"><br><pBold>The selection sort algorithm swaps the largest or smallest value in an array with the first or last element in the array to sort it. (Photo: Stack Overflow)</pBold>
+									</td></tr></table><br>	
+									<p>&nbsp;</p>
+									<p class="subtitle">Insertion Sort </p>
+									<p>
+									Insertion sort is another sorting algorithm that divides an Array or ArrayList into two sections: a sorted array and an unsorted array. The first value in the unsorted array is then compared with each 
+									element in the sorted array until its correct position is found. This process is then repeated until the entire array is sorted. When the array is already sorted, insertion sort will 
+									take n-1 comparisons. When the array is sorted in reverse order, it will take n(n-1)/2 comparisons. On average however, insertion sort is an O(n^2) algorithm. 
+									</p><br>
+									<center><img src = images/InsertionSort.png style="width:25%;height:auto;"><br><br><pBold>The insertion sort algorithm splits an array into a sorted and unsorted section to sort the array. (Photo: Geeks for Geeks)</pBold>
+									<br>	
+									<p>&nbsp;</p></center>
+									<p class="subtitle">Merge Sort </p>
+									<p>
+									Merge sort is a fast sorting algorithm that splits an Array or ArrayList in half. It then repeats this process, splitting each smaller array into half until the each array contains only one element.
+									Finally, it merges together all of the arrays in the correct order until one final, sorted array is created. Merge sort has a time complexity of O(log n).
+									</p><br>
+									<td><center><img src = images/Mergesort.png style="width:35%;height:auto;"><br><br><pBold>The merge sort algorithm splits an array multiple times to sort the array. (Photo: Geeks for Geeks)</pBold>
+									<p>&nbsp;</p></center>
+									<p class="subtitle">Quicksort </p>
+									<p>
+									Quicksort is another fast sorting algorithm. Unlike mergesort, it selects a "pivot" to split the array. All elements to the left of the pivot are made to be <= pivot and all elements to the right of the pivot are made to be >= pivot. 
+									It then repeats this process until the entire array is sorted.</p><br>
+									<td><center><img src = images/Quicksort.png style="width:45%;height:auto;"><br><br><pBold>The quicksort algorithm uses a pivot to sort an array. (Photo: Techie Delight)</pBold>
+									<br>	
+									<center>
+									<a href= "Tutorials.html"><img src= buttons/Previous.jpg style="width:235.5px;height:110px;border:0px"></a>
+									<a href= "SearchingAndSortingExamples.html"><img src= buttons/Examples.jpg style="width:235.5px;height:110px;border:0px"></a>
+									</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+				<div id="footer-wrapper">
+			<div class="container">
+				<div class="row" id="footer-content">
+				<p>This website uses the Skylined web template by TEMPLATED.
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

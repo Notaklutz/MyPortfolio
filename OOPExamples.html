@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Kevin Nguyen's Portfolio</title>
+		<link rel="shortcut icon" href="images/favicon .ico" type="image/x-icon">
+		<link rel="icon" href="images/favicon .ico" type="image/x-icon">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<script src="js/slideshow.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header-wrapper">
+				<div class="container">
+					<div id="header">
+						<div id="logo">
+							<h1><a href="#">Kevin Nguyen's Portfolio</a></h1>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<nav id="nav">
+						<ul>
+							<li class="current_page_item"><a href="Home.html">Home</a></li>
+                            <li><a href="Tutorials.html">Tutorials</a></li>
+                            <li><a href="Projects.html">Projects</a></li>
+							<li><a href="FutureProjects.html">Future Projects</a></li>
+                            <li><a href="OtherSkills.html">Other Skills</a></li>
+							<li><a href="Bibliography.html">Bibliography</a></li>
+                            <li><a href="AboutMe.html">About Me</a></li>
+                            <li><a href="ContactMe.html">Contact Me</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="container">
+					<div id="banner">
+						<div class="container"><a href="#"><img src="images/Nature.jpg" alt=""></a></div>
+					</div>
+				</div>
+			</div>
+			<div id="page">
+				<div class="container">
+					<div class="row skel-cell-important" id="content">
+						<div class="12u">
+							<section>
+								<div class="post">
+									<h2>Object-Oriented Programming (OOP) Examples</h2>
+									<p><br>
+									<p class="subtitle">Don't Fear the OOP </p>
+									<p>
+									Don't Fear the OOP is a Java tutorial that was created by Johannes Claerbout in 1998. It uses the process of a writer creating a Western novel to explain the concept
+									of OOP in Java. In my AP Computer Science class, I, along with two others, adapted this concept to explain OOP using George Lucas' Star Wars movies. This assignment allowed me to gain a 
+									thorough understanding of how to design objects and classes in Java in a fun and easy-to-understand way. I highly encourage anyone who wants to learn OOP to try creating their
+									own version of this tutorial as well. The full assignment can be found below:</p>
+									<a href="DFtO.html"><img src= buttons/DFtO.jpg style="width:235px;height:90px;display: block;margin-left: auto;margin-right: auto;border:0px;"></a>
+									<p class="subtitle">Creating UML Class Diagrams </p>
+									<table><tr><td><p>
+									Being able to create UML (Unified Modelling Language) class diagrams is an important part of class and program design. 
+									Not only can they give you can overview of an individual class, but they can also clarify the relationships 
+									that exist between multiple classes in a program. In the examples on the side, I've made a class diagram for a single class, as well 
+									as a larger diagram showing the relationships between multiple classes.
+									<td><center><img src = images/IndividualUML.jpg style="border:0px;"><br><pBold>In this individual class diagram, there are two sections. The top section is for the instance variables (including data types) while the bottom section is 
+									for the methods and constructors (including parameters and return type). Before each variable/method/constructor, there is a symbol denoting its access modifier.
+									- is for private, + is for public, and # is for protected.</pBold>
+									<center><img src = images/RelationshipsUML.jpg style="width:550px;height:auto;"><br><pBold>In this UML diagram, multiple classes and their relationships with other classes are displayed. 
+									Each class has an individual class diagram, showing their instance variables/methods/constructors. The Rectangle, 
+									Triangle, and Oval classes have an arrow connecting them to the Shape class, which shows that those classes extend Shape 
+									and have an is-a relationship with it. </pBold>
+									</td></tr></table>
+									<p>&nbsp;</p>
+									<p class="subtitle">Abstract Shapes </p>
+									<p>
+							        In the following example, I demonstrate important OOP concepts such as abstract classes and methods, parameter passing, inheritance, and encapsulation by having 
+									two classes (RectangularPrism and Sphere) extend an abstract class (Solid). The subclasses inherit the instance variables and methods of Solid. They also implement 
+									the abstract methods, which have no implementation in Solid. Furthermore, all of the instance variables are private, which means that they can only be accessed and manipulated through 
+									methods such as getName(), volume(), and surfaceArea(). Press the buttons below to scroll through images of my code.
+									</p><br>
+									<!-- Slideshow code -->
+									<!-- Slideshow container -->
+									<div class="slideshow-container">
+
+									  <!-- Full-width images with number and caption text -->
+									  <div class="mySlides fade">
+										<div class="numbertext">1 / 3</div>
+										<img src="images/Solid.jpg" style="width:50%;height:auto;display: block;margin-left: auto;margin-right: auto;">
+										<div class="text">Solid is an abstract class</div>
+									  </div>
+
+									  <div class="mySlides fade">
+										<div class="numbertext">2 / 3</div>
+										<img src="images/RectangularPrism.jpg" style="width:70%;height:auto;display: block;margin-left: auto;margin-right: auto;">
+										<div class="text">RectangularPrism extends Solid</div>
+									  </div>
+
+									  <div class="mySlides fade">
+										<div class="numbertext">3 / 3</div>
+										<img src="images/Sphere.jpg" style="width:50%;height:auto;display: block;margin-left: auto;margin-right: auto;">
+										<div class="text">Sphere extends Solid</div>
+									  </div>
+
+									  <!-- Next and previous buttons -->
+									  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+									  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+									</div>
+									<br>
+
+									<!-- The dots/circles -->
+									<div style="text-align:center">
+									  <span class="dot" onclick="currentSlide(1)"></span> 
+									  <span class="dot" onclick="currentSlide(2)"></span> 
+									  <span class="dot" onclick="currentSlide(3)"></span> 
+									</div>
+									<!-- End of slideshow code -->
+									<center><br>
+									<a href= "OOP.html"><img src= buttons/Previous.jpg style="width:235.5px;height:110px;border:0px"></a>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+				<div id="footer-wrapper">
+			<div class="container">
+				<div class="row" id="footer-content">
+				<p>This website uses the Skylined web template by TEMPLATED.
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

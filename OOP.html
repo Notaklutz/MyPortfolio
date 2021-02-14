@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Kevin Nguyen's Portfolio</title>
+		<link rel="shortcut icon" href="images/favicon .ico" type="image/x-icon">
+		<link rel="icon" href="images/favicon .ico" type="image/x-icon">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header-wrapper">
+				<div class="container">
+					<div id="header">
+						<div id="logo">
+							<h1><a href="#">Kevin Nguyen's Portfolio</a></h1>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<nav id="nav">
+						<ul>
+							<li class="current_page_item"><a href="Home.html">Home</a></li>
+                            <li><a href="Tutorials.html">Tutorials</a></li>
+                            <li><a href="Projects.html">Projects</a></li>
+							<li><a href="FutureProjects.html">Future Projects</a></li>
+                            <li><a href="OtherSkills.html">Other Skills</a></li>
+							<li><a href="Bibliography.html">Bibliography</a></li>
+                            <li><a href="AboutMe.html">About Me</a></li>
+                            <li><a href="ContactMe.html">Contact Me</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="container">
+					<div id="banner">
+						<div class="container"><a href="#"><img src="images/Nature.jpg" alt=""></a></div>
+					</div>
+				</div>
+			</div>
+			<div id="page">
+				<div class="container">
+					<div class="row skel-cell-important" id="content">
+						<div class="12u">
+							<section>
+								<div class="post">
+									<h2>Object-Oriented Programming (OOP)</h2>
+									<p><br>
+									Java is an object-oriented programming (OOP) language.
+									As such, programming in Java revolves around using "objects".
+									Simply put, an object is an instance of a class. A good way to
+									visualize this concept is to think of a class as a template and an object as
+									a creation using that template. Each object of a class has certain 
+									attributes (variables) and behaviours (methods). Every object can have
+									different specifications for their variables, but they still retain the same attributes.
+									In this way, OOP mirrors real life. For example, every person has certain
+									attributes (eye colour, hair colour, height, etc.) and behaviours (walk, sleep, talk, etc.).
+									However, each person has different eye colours, heights, etc. Some people might even walk or talk
+									differently (we can mimic this by overriding methods, which will be explained in a different 
+									section). We can use a template (class) to create a generic person (object) and customize its
+									attributes (variables). Throughout this section, we will continue to use the Person class as an example.
+									<p>&nbsp;</p>
+									<p class="subtitle">Classes </p>
+									<table><tr><td><p>
+									A class defines an object and contains the methods that will interact with it.
+									Every class (with the exception of a few, which will be explained later) has a constructor.
+									If the programmer does not define one, Java will automatically create one with no parameters. 
+									A constructor is used to create instances/objects of a class. A class can have many constructors with
+									different parameters to create objects with different specified attributes. For example, one constructor might make a person with
+									blue eyes and another might make a person with brown eyes. Constructors usually initialize all of an object's instance variables. 
+									They also don't have a return type or return a value and have the same name of the class. Another important concept of classes in Java
+									are static methods. These methods can be used without any objects of the class being created. For example, the random() method in the
+									Math class does not need a Math object to be used. For non-static methods, an object must be created for the method to be useable.</p></td>
+									<td><center><img src = images/Constructors.jpg><br><pBold>The Person class has two constructors. One will initialize the instance variables with default values 
+									and one will initialize the instance variables according to the parameters that are passed into the constructor.</pBold>
+									</td></tr></table>
+									<p>&nbsp;</p>
+									<p class="subtitle">Objects </p>
+									<table><tr><td><p>
+							        As stated before, objects are instances of a class. They contain data (instance variables/fields)
+									and methods that operate on the aforementioned data. Objects are created using the keyword new followed by the class name. </p></td>
+									<td><center><img src = images/NewObject.jpg><br><pBold>The new keyword is used to create a Person object with black eyes, red hair, and a height of 160.</pBold>
+									</td></tr></table>
+									<p>&nbsp;</p>
+									<p class="subtitle">Parent Classes (Superclasses), Subclasses, and Inheritance </p>
+									<table><tr><td><p>
+							        Classes can be extended and made subclasses of other classes. This means that they inherit all of the methods and fields of their parent class.
+									For example, the Child class will extend the Person class. It inherits the fields (height, eye colour, etc.) and methods (walk, talk, etc.) of
+									the Person class. When a subclass extends a parent class (also known as a superclass), it has a IS-A relationship with that class. For example, a child IS-A person. Furthermore, each subclass can even override methods of its parent class by redefining it within the subclass. For example, an olympic sprinter 
+									will not have the same run() method as a toddler. Technically, all classes are subclasses, as all classes implicitly extend the Object class.</p></td>
+									<td><center><img src = images/Subclass.jpg><br><pBold>The Child class extends Person. Person is now the parent class of Child, which is now a subclass of Person. Notice that the Child constructor uses the same instance variables as Person, despite
+									not declaring any instance variables. This is because Child inherits the instance variables of Person, its parent class.</pBold>
+									</td></tr></table>
+									<p>&nbsp;</p>
+									<p class="subtitle">Encapsulation (Public and Private) </p>
+									<table><tr><td><p>
+							        Constructors and methods that are declared public can be accessed by other classes. Usually, all 
+									instance variables and helper methods (methods that are only needed inside the class) are declared private and hidden from other classes (they can only be accessed by the class they're in).
+									The process of declaring instance variables and helper methods as private is known as encapsulation.
+									It prevents classes from being changed if an external class is changed and is crucial in team development as classes can only be 
+									interacted with via its public constructors and methods. In order to access private fields, accessor (getter) methods and mutator (setter) methods are used.</p>
+									<td><center><img src = images/PrivateFields.jpg><br><pBold>All of the instance variables in Person are declared private. They can only be interacted with by accessor and mutator methods. In the case of eyeColour, these methods are getEyeColour() and setEyeColour(). Notice that setEyeColour() allows for a parameter pass in order to set the eye colour.</pBold>
+									</td></tr></table>
+									<p>&nbsp;</p>
+									<p class="subtitle">Abstraction </p>
+									<p>
+									Abstraction is the process of creating a generic class (containing shared methods and fields) that will 
+									be used as the parent class of many subclasses. For example, the Person class contains shared methods and 
+									fields and will be used as the parent class of the Adult class, Child class, Teenager class, etc.</p>
+									<p>&nbsp;</p>
+									<p class="subtitle">Polymorphism </p>
+									<table><tr><td><p>
+									Polymorphism occurs when an object extends or implements another class and is able to be represented as something other than itself. 
+									The easiest way to visualize this is to check if a class satisfies more than one IS-A relationship. In this way - technically speaking - all 
+									classes are polymorphic as all classes implicitly extend the Object class. For example, the SeniorCitizen class is polymorphic. It IS-A Object, 
+									IS-A Person, and IS-A SeniorCitizen.</p>
+									<td><center><img src = images/SeniorCitizen.jpg><br><pBold>The SeniorCitizen class explicitly extends Person and implicitly extends Object. It is polymorphic because it IS-A SeniorCitizen, IS-A Person, and IS-A Object.</pBold>
+									</td></tr></table>
+									<p>&nbsp;</p>
+									<p class="subtitle">Upcasting and Downcasting </p>
+									<table><tr><td><p>
+									Upcasting is treating an object of a subclass as an object of a superclass and downcasting is treating an object of a superclass as an object of a subclass. 
+									For example, an object of the Swimmer class can be upcast to the Athlete class. This allows the Swimmer object to use methods of the Athlete class. However, the 
+									Swimmer object itself is not changed, it is just being represented differently. While being represented as an Athlete however, the Swimmer object cannot use methods
+									of the Swimmer class (swim() for example). Unlike downcasting, upcasting is done automatically. This is because upcasting can never fail. For example, a Swimmer object and 
+									a HockeyPlayer object can always be upcast to Athlete, but a Swimmer object, while being represented as an Athlete, cannot be downcast to HockeyPlayer without an error. This is why 
+									downcasting must be done manually by the programmer. Upcasting and downcasting are useful because they allow for the usage of general methods in superclasses, which simplifies subclasses. 
+									For example, both Swimmer and HockeyPlayer can be automatically upcast to Athlete to use its run() method.</p>
+									<td><center><img src = images/AutomaticUpcasting.jpg><br><pBold>The Swimmer object sally and the HockeyPlayer object horton are being automatically upcast to Athlete in order to use the Athlete class' run() method.</pBold>
+									<img src = images/UpcastingAndDowncasting.jpg><br><pBold>The Swimmer object is automatically upcast to Athlete but needs to be manually downcast back to Swimmer.</pBold>
+									</td></tr></table>
+									<p>&nbsp;</p>
+									<p class="subtitle">Special Classes </p>
+									<table><tr><td><p>
+									Final classes, abstract classes, and interfaces are all special types of classes. A final class cannot be extend another class or have itself be extended. Furthermore, none of its 
+									methods can be changed. These classes are very secure owing to the fact that they can never be modified. The String class is an example of a built-in final class. Abstract classes 
+									are extremely basic classes that act as the ultimate template for any subclass. They are meant to be extended by another class and must contain at least one abstract method that 
+									will be overriden by its subclass. Although abstract methods must be declared, they do not need to have any actual implementation. Instead, it is the job of the subclass to define
+									an abstract method. For example, the Person class could be an abstract class that contains an abstract method called talk(). Each subclass would then be able to define talk() 
+									differently, as everyone doesn't talk the same (for example, an English person vs a French person). Finally, an interface is a class that contains only public abstract methods and (potentially) 
+									constants (public static final variables). Since all methods in an interface are abstract, the public and abstract keywords do not have to be explicitly stated in the method declarations. Interfaces are meant
+									to be implemented and any class that implements them must define all of their methods. Interfaces are used to define behaviours that are common among different objects. For example, an interface called JumpCapable (able to jump) might be implemented 
+									by the Adult class, Teenager class, maybe even some Animal subclasses, but not by the Baby class. Interfaces can be implemented regardless of what a class extends (in the previous example, this was demonstrated by a subclass of Animal 
+									implementing the JumpCapable interface). Any class that implements an interface can also be considered polymorphic (an Adult IS JumpCapable;see polymorphism above for in-depth explanation). Unlike an abstract class however, implementations cannot be written for any methods of an interface and an interface cannot contain 
+									instance variables (only constants). Both abstract classes and interfaces cannot be instantiated. Their only purpose is to be extended (abstract classes) or implemented (interfaces). </p>
+									<td><center><img src = images/AbstractClass.jpg><br><pBold>Person is an abstract class that contains the abstract method run().</pBold>
+									<img src = images/Interface.jpg><br><pBold>JumpCapable is an interface that contains a constant (gravity) and a public abstract method called jump(). Notice that Java automatically defines every method in an interface to be public abstract, thereby removing the need for the programmer to define each method as such.</pBold>
+							        </td></tr></table>
+									<center>
+									<a href= "Tutorials.html"><img src= buttons/Previous.jpg style="width:235.5px;height:110px;border:0px"></a>
+									<a href= "OOPExamples.html"><img src= buttons/Examples.jpg style="width:235.5px;height:110px;border:0px"></a>
+									</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+				<div id="footer-wrapper">
+			<div class="container">
+				<div class="row" id="footer-content">
+				<p>This website uses the Skylined web template by TEMPLATED.
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

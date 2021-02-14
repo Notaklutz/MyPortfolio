@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Kevin Nguyen's Portfolio</title>
+		<link rel="shortcut icon" href="images/favicon .ico" type="image/x-icon">
+		<link rel="icon" href="images/favicon .ico" type="image/x-icon">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header-wrapper">
+				<div class="container">
+					<div id="header">
+						<div id="logo">
+							<h1><a href="#">Kevin Nguyen's Portfolio</a></h1>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<nav id="nav">
+						<ul>
+							<li class="current_page_item"><a href="Home.html">Home</a></li>
+                            <li><a href="Tutorials.html">Tutorials</a></li>
+                            <li><a href="Projects.html">Projects</a></li>
+							<li><a href="FutureProjects.html">Future Projects</a></li>
+                            <li><a href="OtherSkills.html">Other Skills</a></li>
+							<li><a href="Bibliography.html">Bibliography</a></li>
+                            <li><a href="AboutMe.html">About Me</a></li>
+                            <li><a href="ContactMe.html">Contact Me</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="container">
+					<div id="banner">
+						<div class="container"><a href="#"><img src="images/Nature.jpg" alt=""></a></div>
+					</div>
+				</div>
+			</div>
+			<div id="page">
+				<div class="container">
+					<div class="row skel-cell-important" id="content">
+						<div class="12u">
+							<section>
+								<div class="post">
+									<h2>Advanced Object-Oriented Programming (OOP)</h2>
+									<p><br>
+									As you already know, Java is an object-oriented programming language. As a programmer, being able to understand 
+									and analyze the object-oriented programming style is crucial to designing and creating programs in object-oriented programming 
+									languages. The most important concepts in object-oriented programming are inheritance, polymorphism, and encapsulation. Although you've 
+									have already seen a brief explanation of these concepts, in this section, you'll get a much more thorough and in-depth explanation of each as well as an overview of OOP analysis and design. 
+									It is recommended that you check out the first OOP tutorial before continuing.
+									<p>&nbsp;</p>
+									<p class="subtitle">Object-Oriented Programming Analysis and Design</p>
+									<table><tr><td><p>
+									In order to analyze and design an OOP program, you have to think about what a class and an object of that class will need. What instance variables does it need? How about methods? How will that class 
+									interact with other classes? Will it extend a class and/or implement an interface, or will it be a superclass? For example, a car will have wheels, windows, seats, fuel capacity, etc. Subclasses of a car could be minivan, SUV, sedan, etc. 
+									These cars could implement interfaces such as the make of the car, etc. 
+									<td><center><img src = images/Convertible.jpg><br><pBold>A convertible (object of the Convertible class) will have a name, wheels, seats, a roof status, a fuel level, and some methods.</pBold>
+									</td></tr></table>
+									<p>&nbsp;</p>
+									<p class="subtitle">Advanced Inheritance </p>
+									<table><tr><td><p>
+									In Java, a class will "inherit" all of the fields and methods from its parent class. An important exception to this rule is private fields. Subclasses 
+									will only inherit public and protected fields from its superclass, not private fields. Inheritance allows us to build classes upon the foundations of other classes, making coding easier. Inheritance is also a prerequisite for run-time polymorphism (overriding methods), which 
+									will be further explained in the following section about polymorphism. As you already know, a class cannot extend more than one class, but can implement multiple interfaces. Inheritance is a core principle of OOP in Java.
+							        <td><center><img src = images/InheritanceExample.jpg><br><pBold>The Truck class inherits name, model, and getName(), but not speed or seats.</pBold>
+									</td></tr></table>
+									<p>&nbsp;</p>
+									<p class="subtitle">Advanced Polymorphism </p>
+									<table><tr><td><p>
+							        The word polymorphism comes from ancient greek as a combination of the word "poly" (many) and "morphe" (forms). 
+									In Java, polymorphism allows methods to be executed at run-time depending on the object's type. This is known as 
+									run-time binding or dynamic binding. Using polymorphism, you can also override inherited methods in subclasses. This can be useful when you have subclasses that don't behave in the same way as their superclass.
+									For example, a dolphin is a mammal, but it doesn't walk or run. Instead, it swims. We can represent this by overriding methods. Another thing that we can do with polymorphism is have multiple methods of the same name in different inherited classes and have
+									them do different things. For example, a pony and a horse can both have a makeSound() method, but they will make different sounds. By allowing us to reuse methods while still having them be unique, polymorphism makes
+									programming much easier.</p></td>
+									<td><center><img src = images/makeSound.jpg><br><pBold>The inherited makeSound() method is overriden in Pony.</pBold>
+									</td></tr></table>
+									<p>&nbsp;</p>
+									<p class="subtitle">Advanced Encapsulation </p>
+									<table><tr><td><p>
+									Encapsulation is when a class' data and helper methods are hidden from other classes. This is accomplished when all instance variables and helper methods of a class are made private while getter and setter methods are made public. 
+									Encapsulation protects data from the user as well as other programmers who might accidentally alter your code. It also allows us to make variables write-only or read-only depending on their purpose by only including a getter or setter method 
+									in the class. It provides an extra layer of security and functionality for your class. </p></td>
+							        <td><center><img src = images/EncapsulationExample.jpg><br><pBold>The flavour field in VanillaIceCream is read-only because it must be vanilla, whereas scoops can be
+									changed and accessed.</pBold>
+									</td></tr></table>
+									<center>
+									<a href= "Tutorials.html"><img src= buttons/Previous.jpg style="width:235.5px;height:110px;border:0px"></a>
+									<a href= "AdvOOPExamples.html"><img src= buttons/Examples.jpg style="width:235.5px;height:110px;border:0px"></a>
+									</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+				<div id="footer-wrapper">
+			<div class="container">
+				<div class="row" id="footer-content">
+				<p>This website uses the Skylined web template by TEMPLATED.
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
